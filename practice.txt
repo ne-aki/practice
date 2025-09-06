@@ -2,4 +2,8 @@
 편집1
 편집2
 편집3
+<<<<<<< HEAD
 practice branch에서 작업
+=======
+practice 2에서 편집
+>>>>>>> feature/practice2
