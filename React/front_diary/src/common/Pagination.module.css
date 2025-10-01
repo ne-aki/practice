@@ -1,0 +1,152 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 40px 0 20px 0;
+}
+
+.pagination li a {
+  padding: 10px 16px;
+  min-width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.pagination li a:hover {
+  border-color: #667eea;
+  color: #667eea;
+  background-color: #f8f9ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(102, 126, 234, 0.15);
+}
+
+/* Disabled 상태 */
+.pagination li.disabled a {
+  color: #ccc !important;
+  border-color: #eee !important;
+  background-color: #f9f9f9 !important;
+  cursor: not-allowed !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* 기본 활성화 스타일 */
+.pagination li a[aria-current="page"],
+.pagination .selected a,
+.pagination li.selected a,
+ul.pagination li.selected a,
+.pagination li a.selected {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+  border-color: transparent !important;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3) !important;
+}
+
+.pagination li a[aria-current="page"]:hover,
+.pagination .selected a:hover,
+.pagination li.selected a:hover {
+  background: linear-gradient(135deg, #5568d3 0%, #6a3f8f 100%) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4) !important;
+}
+
+/* 🎨 색상 테마들 */
+
+/* Blue 테마 */
+.pagination.blue li a[aria-current="page"],
+.pagination.blue .selected a,
+.pagination.blue li.selected a {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%) !important;
+  border-color: transparent !important;
+}
+
+.pagination.blue li a[aria-current="page"]:hover,
+.pagination.blue .selected a:hover,
+.pagination.blue li.selected a:hover {
+  background: linear-gradient(135deg, #0056b3 0%, #004085 100%) !important;
+}
+
+/* Green 테마 */
+.pagination.green li a[aria-current="page"],
+.pagination.green .selected a,
+.pagination.green li.selected a {
+  background: linear-gradient(135deg, #43a047 0%, #2e7d32 100%) !important;
+  border-color: transparent !important;
+}
+
+.pagination.green li a[aria-current="page"]:hover,
+.pagination.green .selected a:hover,
+.pagination.green li.selected a:hover {
+  background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%) !important;
+}
+
+/* Brown 테마 */
+.pagination.brown li a[aria-current="page"],
+.pagination.brown .selected a,
+.pagination.brown li.selected a {
+  background: linear-gradient(135deg, #8B4513 0%, #6B3410 100%) !important;
+  border-color: transparent !important;
+}
+
+.pagination.brown li a[aria-current="page"]:hover,
+.pagination.brown .selected a:hover,
+.pagination.brown li.selected a:hover {
+  background: linear-gradient(135deg, #6B3410 0%, #4B2410 100%) !important;
+}
+
+/* Red 테마 */
+.pagination.red li a[aria-current="page"],
+.pagination.red .selected a,
+.pagination.red li.selected a {
+  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%) !important;
+  border-color: transparent !important;
+}
+
+.pagination.red li a[aria-current="page"]:hover,
+.pagination.red .selected a:hover,
+.pagination.red li.selected a:hover {
+  background: linear-gradient(135deg, #c82333 0%, #bd2130 100%) !important;
+}
+
+/* Orange 테마 */
+.pagination.orange li a[aria-current="page"],
+.pagination.orange .selected a,
+.pagination.orange li.selected a {
+  background: linear-gradient(135deg, #fd7e14 0%, #e55a00 100%) !important;
+  border-color: transparent !important;
+}
+
+.pagination.orange li a[aria-current="page"]:hover,
+.pagination.orange .selected a:hover,
+.pagination.orange li.selected a:hover {
+  background: linear-gradient(135deg, #e55a00 0%, #cc5200 100%) !important;
+}
+
+/* Gray 테마 */
+.pagination.gray li a[aria-current="page"],
+.pagination.gray .selected a,
+.pagination.gray li.selected a {
+  background: linear-gradient(135deg, #6c757d 0%, #545b62 100%) !important;
+  border-color: transparent !important;
+}
+
+.pagination.gray li a[aria-current="page"]:hover,
+.pagination.gray .selected a:hover,
+.pagination.gray li.selected a:hover {
+  background: linear-gradient(135deg, #545b62 0%, #3d4349 100%) !important;
+}

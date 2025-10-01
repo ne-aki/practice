@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポータル - あなたのインターネットの入り口</title>
+    <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+    <div class="container">
+        <header class="animate-fade-in">
+            <div class="logo">🌟 ポータル</div>
+            <div class="search-container">
+                <input type="text" class="search-box" placeholder="キーワードを入力して検索...">
+                <button class="search-btn" onclick="performSearch()">検索</button>
+            </div>
+            <nav class="nav-links">
+                <a href="#news">ニュース</a>
+                <a href="#weather">天気</a>
+                <a href="#finance">金融</a>
+                <a href="#sports">スポーツ</a>
+                <a href="#entertainment">エンタメ</a>
+                <a href="#technology">テクノロジー</a>
+                <a href="#lifestyle">ライフスタイル</a>
+            </nav>
+        </header>
+
+        <div class="main-content">
+            <div>
+                <section class="news-section animate-fade-in">
+                    <h2 class="section-title">📰 最新ニュース</h2>
+                    <div class="news-item">
+                        <span class="news-time">14:30</span>
+                        <a href="#" class="news-title">新しいテクノロジートレンドが業界に革命をもたらす</a>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-time">13:15</span>
+                        <a href="#" class="news-title">経済指標が予想を上回る成長を示す</a>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-time">12:45</span>
+                        <a href="#" class="news-title">スポーツ界で注目の新星が登場</a>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-time">11:20</span>
+                        <a href="#" class="news-title">環境保護の新たな取り組みが始動</a>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-time">10:55</span>
+                        <a href="#" class="news-title">文化イベントが全国で開催予定</a>
+                    </div>
+                </section>
+
+                <section class="services-section animate-fade-in">
+                    <h2 class="section-title">🚀 サービス</h2>
+                    <div class="services-grid">
+                        <a href="#" class="service-item">
+                            <span class="service-icon">📧</span>
+                            <div>メール</div>
+                        </a>
+                        <a href="#" class="service-item">
+                            <span class="service-icon">🛒</span>
+                            <div>ショッピング</div>
+                        </a>
+                        <a href="#" class="service-item">
+                            <span class="service-icon">📱</span>
+                            <div>モバイル</div>
+                        </a>
+                        <a href="#" class="service-item">
+                            <span class="service-icon">💰</span>
+                            <div>金融</div>
+                        </a>
+                        <a href="#" class="service-item">
+                            <span class="service-icon">🎵</span>
+                            <div>音楽</div>
+                        </a>
+                        <a href="#" class="service-item">
+                            <span class="service-icon">📺</span>
+                            <div>動画</div>
+                        </a>
+                    </div>
+                </section>
+            </div>
+
+            <div>
+                <section class="weather-section animate-fade-in">
+                    <h2 class="section-title">🌤️ 天気</h2>
+                    <div class="weather-info">
+                        <div class="weather-temp">22°C</div>
+                        <div class="weather-desc">晴れ時々曇り</div>
+                        <div class="weather-details">
+                            <div class="weather-detail">
+                                <div>湿度</div>
+                                <div><strong>65%</strong></div>
+                            </div>
+                            <div class="weather-detail">
+                                <div>風速</div>
+                                <div><strong>3m/s</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="quick-links animate-fade-in">
+                    <h2 class="section-title">🔗 クイックリンク</h2>
+                    <a href="#" class="quick-link-item">📊 株価情報</a>
+                    <a href="#" class="quick-link-item">🎮 ゲーム</a>
+                    <a href="#" class="quick-link-item">📚 ブログ</a>
+                    <a href="#" class="quick-link-item">🎯 占い</a>
+                    <a href="#" class="quick-link-item">🍳 レシピ</a>
+                    <a href="#" class="quick-link-item">🚗 交通情報</a>
+                    <a href="#" class="quick-link-item">🏥 健康</a>
+                    <a href="#" class="quick-link-item">🎨 趣味</a>
+                </section>
+            </div>
+        </div>
+
+        <footer class="footer animate-fade-in">
+            <div class="footer-links">
+                <a href="#">プライバシーポリシー</a>
+                <a href="#">利用規約</a>
+                <a href="#">ヘルプ</a>
+                <a href="#">お問い合わせ</a>
+                <a href="#">広告掲載</a>
+                <a href="#">会社概要</a>
+            </div>
+            <div class="copyright">© 2025 ポータル. All rights reserved.</div>
+        </footer>
+    </div>
+
+    <script src="practice.js">
+    </script>
+</body>
+</html>

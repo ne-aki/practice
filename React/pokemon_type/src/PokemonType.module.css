@@ -1,0 +1,73 @@
+.type_table {
+  width: 1100px;
+  height: 900px;
+  text-align: center;
+  border-collapse: collapse;
+  font-family: 'Malgun Gothic', sans-serif;
+}
+
+.type_table td {
+  border: 1px solid #ccc;
+  vertical-align: middle;
+  padding: 8px;
+}
+
+.type_table > thead td {
+  padding: 5px;
+  background-color: #0066cc;
+  color: white;
+  font-weight: bold;
+}
+
+.type_table > thead td:first-child {
+  background-color: white;
+  color: black;
+}
+
+.type_table tbody .type_name {
+  background-color: #e85c5c;
+  color: white;
+  font-weight: bold;
+}
+
+/* 효과가 좋다 (2배) - 빨간색 원 */
+.effective {
+  color: #e74c3c;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* 효과가 별로다 (0.5배) - 노란색 삼각형 */
+.notEffective {
+  color: #f1c40f;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* 효과가 없다 (0배) - 회색 X */
+.noEffect {
+  color: #95a5a6;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.button_container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.detail_button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #0066cc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.detail_button:hover {
+  background-color: #0052a3;
+}

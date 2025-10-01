@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 해당 파일에 모든 쿼리문을 작성 -->
+<!-- namespace에는 xml파일과 연결할 Mapper interface 파일명을 패키지를 포함하여 적어주세요 -->
+<mapper namespace="com.home.pokemon_type.pokemon_type.mapper.PokemonTypeMapper">
+	<resultMap id="poke-type" type="com.home.pokemon_type.pokemon_type.dto.PokemonTypeDTO">
+    <id column="TYPE_NUM" property="typeNum" />
+    <result column="ATTACK_TYPE" property="attackType" />
+    <result column="NORMAL" property="normal" />
+    <result column="FIRE" property="fire" />
+    <result column="WATER" property="water" />
+    <result column="GRASS" property="grass" />
+    <result column="ELECTRIC" property="electric" />
+    <result column="ICE" property="ice" />
+    <result column="FIGHTING" property="fighting" />
+    <result column="POISON" property="poison" />
+    <result column="GROUND" property="ground" />
+    <result column="FLYING" property="flying" />
+    <result column="PSYCHIC" property="psychic" />
+    <result column="BUG" property="bug" />
+    <result column="ROCK" property="rock" />
+    <result column="GHOST" property="ghost" />
+    <result column="DRAGON" property="dragon" />
+    <result column="DARK" property="dark" />
+    <result column="STEEL" property="steel" />
+    <result column="FAIRY" property="fairy" />
+  </resultMap>
+  <select id="allType" resultMap="poke-type">
+    SELECT *
+    FROM defense_type
+  </select>
+</mapper>
+
+
+

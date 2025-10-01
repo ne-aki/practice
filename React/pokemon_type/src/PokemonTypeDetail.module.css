@@ -1,0 +1,121 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.button_container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.back_button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #e85c5c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back_button:hover {
+  background-color: #d04545;
+}
+
+.select_container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.select_box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.select_box label {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.select_box select {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: 2px solid #0066cc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.result_table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: 'Malgun Gothic', sans-serif;
+}
+
+.result_table th,
+.result_table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+.result_table thead th {
+  background-color: #0066cc;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.result_table tbody .attack_type {
+  background-color: #0066cc;
+  color: white;
+  font-weight: bold;
+}
+
+.result_table tbody .combined {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+/* 효과가 매우 좋다 (4배) - 빨간색 원 두개 */
+.effective4 {
+  color: #e74c3c;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* 효과가 좋다 (2배) - 빨간색 원 */
+.effective {
+  color: #e74c3c;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* 효과가 별로다 (0.5배) - 노란색 삼각형 */
+.notEffective {
+  color: #f1c40f;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* 효과가 매우 별로다 (0.25배) - 노란색 삼각형 두개 */
+.notEffective25 {
+  color: #f1c40f;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* 효과가 없다 (0배) - 회색 X */
+.noEffect {
+  color: #95a5a6;
+  font-size: 20px;
+  font-weight: bold;
+}
